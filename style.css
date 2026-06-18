@@ -1,0 +1,27 @@
+/* Normalization Part */
+*, *::before , *::after{box-sizing:border-box;}
+html{-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+body{margin:24px;background-color:var(--main-color);display:flex;flex-flow:column wrap;justify-content:center;align-items:center;font-size:14px;line-height:1.15;font-family: "Outfit", sans-serif;font-optical-sizing: auto;font-style: normal;color:var(--light-color);min-height:98vh;}
+article,section, footer,aside,header{display:block;}
+h1, h2, h3, h4 ,h5 ,h6{font-weight:600;margin:10px 0;}
+
+
+/* Styling */
+
+:root{
+    --main-color:hsl(0, 0%, 8%);
+    --profile-color: hsl(0, 0%, 12%);
+    --links-color:hsl(0, 0%, 20%);
+    --active-color:hsl(75, 94%, 57%);
+    --light-color:#fff;
+}
+.profile{background-color:var(--profile-color);padding:32px;text-align:center;width:100%;max-width:400px;border-radius:16px;}
+.profile .pv-info img{width:100px;height:100px;border-radius:50%;}
+.profile .pv-info .text{margin:24px 0;}
+.user-location, .user-role{font-size:13px;}
+.user-location{color:var(--active-color);}
+.user-role{color:#ddd;}
+.profile .social-links{list-style-type:none;padding:0;margin-top:24px;}
+.profile .social-links li{margin-top:16px;}
+.profile .social-links li a{font-size:14px;transition:all 0.15s ease;font-weight:bold;border-radius:8px;text-decoration:none;color:#fff;padding:16px 16px;background-color:var(--links-color);display:block;width:100%;}
+.profile .social-links li a:hover{background-color:var(--active-color);color:#111;}
